@@ -71,24 +71,27 @@ const Home: NextPage = () => {
 
   return (
     <div className="px-4 h-screen flex flex-col justify-center items-center overflow-hidden">
-      <div className="max-w-3xl max-h-screen overflow-y-auto">
-        <Image
+      <div className="max-w-full max-h-screen overflow-y-auto">
+        {/* <Image
           src="/LOGO.png"
           alt="Revolutionizing Database Interactions with Private LLM Technology"
           width={856}
           height={160}
           className="w-full mt-4"
           unoptimized
-        />
+        /> */}
+        <div style={{"width": 865}}>
+          <span className="w-full mt-4 justify-center items-center" style={{"fontSize": 32, "fontFamily": "cursive", "fontWeight": "bold"}}>AI运维</span>
+        </div>
         <Divider className="!text-[#878c93] !my-6" plain>
           {t('Quick_Start')}
         </Divider>
         <Spin spinning={chatSceneLoading}>
-          <div className="flex flex-wrap -m-1 md:-m-2">
+          <div className="flex flex-wrap -m-1">
             {scenesList.map((scene) => (
               <div
                 key={scene.chat_scene}
-                className="w-full sm:w-1/2 p-1 md:p-2"
+                className="w-full"
                 onClick={() => {
                   handleNewChat(scene);
                 }}

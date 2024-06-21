@@ -135,12 +135,12 @@ function SideBar() {
         icon: mode === 'dark' ? <Icon component={DarkSvg} /> : <Icon component={SunnySvg} />,
         onClick: handleToggleTheme,
       },
-      {
-        key: 'language',
-        name: t('language'),
-        icon: <GlobalOutlined />,
-        onClick: handleChangeLang,
-      },
+      // {
+      //   key: 'language',
+      //   name: t('language'),
+      //   icon: <GlobalOutlined />,
+      //   onClick: handleChangeLang,
+      // },
       {
         key: 'fold',
         name: t(isMenuExpand ? 'Close_Sidebar' : 'Show_Sidebar'),
@@ -332,7 +332,7 @@ function SideBar() {
       </div>
       {/* Settings */}
       <div className="pt-4">
-        <div className="max-h-52 overflow-y-auto scrollbar-default">
+        {/* <div className="max-h-52 overflow-y-auto scrollbar-default">
           {routes.map((item) => (
             <Link key={item.key} href={item.path} className={`${menuItemStyle(pathname === item.path)} overflow-hidden`}>
               <>
@@ -341,7 +341,7 @@ function SideBar() {
               </>
             </Link>
           ))}
-        </div>
+        </div> */}
         <div className="flex items-center justify-around py-4 mt-2">
           {settings.map((item) => (
             <Tooltip key={item.key} title={item.name}>
