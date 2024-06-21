@@ -81,7 +81,7 @@ const Home: NextPage = () => {
           unoptimized
         /> */}
         <div style={{"width": 865}}>
-          <span className="w-full mt-4 justify-center items-center" style={{"fontSize": 32, "fontFamily": "cursive", "fontWeight": "bold"}}>AI运维</span>
+          <span className="w-full mt-4 justify-center items-center" style={{"fontSize": 32, "fontFamily": "cursive", "fontWeight": "bold"}}>SRE GPT</span>
         </div>
         <Divider className="!text-[#878c93] !my-6" plain>
           {t('Quick_Start')}

@@ -61,7 +61,7 @@ function SideBar() {
   const { pathname, replace } = useRouter();
   const { t, i18n } = useTranslation();
 
-  const [logo, setLogo] = useState<string>('/LOGO_1.png');
+  const [logo, setLogo] = useState<string>('/logo1_副本.png');
 
   const routes = useMemo(() => {
     const items: RouteItem[] = [
@@ -223,14 +223,14 @@ function SideBar() {
   }, []);
 
   useEffect(() => {
-    setLogo(mode === 'dark' ? '/WHITE_LOGO.png' : '/LOGO_1.png');
+    setLogo(mode === 'dark' ? '/WHITE_LOGO.png' : '/logo1_副本.png');
   }, [mode]);
 
   if (!isMenuExpand) {
     return (
       <div className="flex flex-col justify-between h-screen bg-white dark:bg-[#232734] animate-fade animate-duration-300">
         <Link href="/" className="px-2 py-3">
-          <Image src="/LOGO_SMALL.png" alt="DB-GPT" width={63} height={46} className="w-[63px] h-[46px]" />
+          <Image src="/logo1_副本.png" alt="SRE-GPT" width={63} height={46} className="w-[63px] h-[46px]" />
         </Link>
         <div>
           <Link href="/" className="flex items-center justify-center my-4 mx-auto w-12 h-12 bg-theme-primary rounded-full text-white">
@@ -286,7 +286,7 @@ function SideBar() {
     <div className="flex flex-col h-screen bg-white dark:bg-[#232734]">
       {/* LOGO */}
       <Link href="/" className="p-2">
-        <Image src={logo} alt="DB-GPT" width={239} height={60} className="w-full h-full" />
+        <Image src={logo} alt="SRE-GPT" width={239} height={30} />
       </Link>
       <Link href="/" className="flex items-center justify-center mb-4 mx-4 h-11 bg-theme-primary rounded text-white">
         <PlusOutlined className="mr-2" />
