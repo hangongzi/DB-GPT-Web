@@ -81,7 +81,10 @@ const Home: NextPage = () => {
           unoptimized
         /> */}
         <div style={{"width": 865}}>
-          <span className="w-full mt-4 justify-center items-center" style={{"fontSize": 32, "fontFamily": "cursive", "fontWeight": "bold"}}>SRE GPT</span>
+          <span className="w-full mt-4 justify-center items-center" 
+            style={{"fontSize": 32, "fontFamily": "cursive", "fontWeight": "bold", "color": "blue"}}
+          >GOC GPT: 应用大模型助力稳定性建设
+          </span>
         </div>
         <Divider className="!text-[#878c93] !my-6" plain>
           {t('Quick_Start')}

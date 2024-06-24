@@ -61,7 +61,7 @@ function SideBar() {
   const { pathname, replace } = useRouter();
   const { t, i18n } = useTranslation();
 
-  const [logo, setLogo] = useState<string>('/logo1_副本.png');
+  const [logo, setLogo] = useState<string>('/goc_logo.png');
 
   const routes = useMemo(() => {
     const items: RouteItem[] = [
@@ -223,14 +223,14 @@ function SideBar() {
   }, []);
 
   useEffect(() => {
-    setLogo(mode === 'dark' ? '/WHITE_LOGO.png' : '/logo1_副本.png');
+    setLogo(mode === 'dark' ? '/goc_logo.png' : '/goc_logo.png');
   }, [mode]);
 
   if (!isMenuExpand) {
     return (
       <div className="flex flex-col justify-between h-screen bg-white dark:bg-[#232734] animate-fade animate-duration-300">
         <Link href="/" className="px-2 py-3">
-          <Image src="/logo1_副本.png" alt="SRE-GPT" width={63} height={46} className="w-[63px] h-[46px]" />
+          <Image src="/goc_logo_small.png" alt="SRE-GPT" width={63} height={46} className="w-[63px] h-[46px]" />
         </Link>
         <div>
           <Link href="/" className="flex items-center justify-center my-4 mx-auto w-12 h-12 bg-theme-primary rounded-full text-white">
